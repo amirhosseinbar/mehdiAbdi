@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>عنوان</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --card: #1a1a1a;
+            --text: #f1f1f1;
+            --subtext: #b5b5b5;
+            --accent: #3b82f6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, sans-serif;
+            direction: rtl;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px 16px 32px;
+        }
+        .profile-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #2a2a2a;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .profile-image img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+        .title {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 14px;
+            color: var(--subtext);
+            margin-bottom: 20px;
+        }
+
+        .map-wrapper {
+            width: 100%;
+            height: 450px;
+            background: var(--card);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: invert(90%) hue-rotate(180deg);
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .title {
+                font-size: 18px;
+            }
+
+            .subtitle {
+                font-size: 13px;
+            }
+
+            .map-wrapper {
+                height: 320px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-image">
+            <img src="./picture.jpg" alt="عکس">
+        </div>
+        <p style="text-align: center;">
+             عمه عزیز ما با قلبی پر از مهر، برای خیلی‌ها پناه  و برای خیلی‌ها مادر بود
+        </p>
+        <p style="text-align: center;">
+            او رفت اما مهربانیش ماند
+       </p>
+        <p style="text-align: center;">
+امروز با دلی شکسته اما با سپاس از بودنش، او را بدرقه میکنیم       </p>
+<Br></Br>
+        <div class="title">📍 موقعیت مکانی تالار لوتوس کرج</div>
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.5187192850426!2d50.9780185!3d35.8362823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbf045208d641%3A0xa073af52ad9d3b06!2sLotus%20Hall!5e0!3m2!1sen!2s!4v1770476978201!5m2!1sen!2s"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
